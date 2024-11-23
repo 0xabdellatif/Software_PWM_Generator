@@ -9,5 +9,7 @@ This is particularly useful for applications where hardware PWM modules are eith
 - Uses Timer0 for precise control over the PWM signal.
 - Employs an external interrupt (INT0) to trigger duty cycle changes.
 
-#### NOTE : 
-Tested and verified using proteus simulation and gives same result as pwm hardware generator.
+#### Changing Time : 
+In order to change the full period you have to : 
+- Change the value of T0CON register (prescaler configuration).
+- Change the macro variable MAX_HIGH_LOW to your value.
